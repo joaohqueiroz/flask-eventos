@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ super() }} - Criar evento{% endblock %}
+
+{% block content %}
+    <div class="my-3">
+        <form action="" method="POST">
+            {{ form.csrf_token }}
+            <legend>Criar evento</legend>
+            <div class="form-group my-3">
+                <label>Título</label>
+                    {{ form.title(class="form-control", placeholder="Título do evento") }}
+            </div>
+
+            <div  class="form-group my-3">
+                <label>Descrição</label>
+                    {{ form.description(class="form-control", placeholder="Descrição do evento") }}
+            </div>
+
+            <div  class="form-group my-3">
+                <label>Onde será</label>
+                    {{ form.where(class="form-control" , placeholder="Onde será o evento")}}
+            </div>
+
+            <div  class="form-group my-3">
+                <label>Data e hora</label>
+                    {{ form.date(class="form-control" , placeholder="dd/mm/yyyy hh:MM")}}
+            </div>
+
+            <div  class="form-group my-3">
+                <label>Imagem de capa</label>
+                    {{ form.image(class="form-control" , placeholder="Cole a URL da imagem")}}
+            </div>
+            <button type="submit" class="btn btn-secondary mt-2">Salvar</button>
+        </form>
+    </div>
+{% endblock %}
