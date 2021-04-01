@@ -10,3 +10,4 @@ Uma pequena aplicação Flask para criação e listagem de eventos, criada com i
 # TODO 🛠
 - [ ] Corrigir erros de update
 - [ ] Adicionar delete
+- [ ] Criar uma pequena lógica de usuários
