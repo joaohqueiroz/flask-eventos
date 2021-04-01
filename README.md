@@ -3,7 +3,7 @@ Uma pequena aplicação Flask para criação e listagem de eventos, criada com i
 
 # Tutorial 📝
 - Instale as dependências
-- Dentro do ambiente do venv rode os comandos:
+- Dentro do ambiente do venv rode os comandos para iniciar o banco de dados SQLite:
  <br/><br/>python run.py db migrate
  <br/><br/>python run.py db update
 
